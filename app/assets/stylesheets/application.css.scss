@@ -165,5 +165,52 @@ a {
   line-height: 25px;
 }
 
+// FORMS
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 2px;
+  height: 4rem;
+}
+
+// .form-group input {
+//   height: 45px;
+//   border: 1px solid #00A699;
+// }
+
+// .form-group textarea {
+//   border: 1px solid #00A699;
+// }
+
+// SIDEBAR
+.sidebar-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar-item {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #82888a;
+}
+
+.sidebar-link {
+  color: #82888a;
+  text-decoration: none;
+}
+
+.sidebar-link:hover, .sidebar-link:focus {
+  color: #CACCCD;
+  text-decoration: none;
+}
+
+.active.sidebar-link {
+  color: #565A5C;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 
