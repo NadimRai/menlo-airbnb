@@ -13,8 +13,27 @@
         		<div class="col-md-6">
           			<label>Check Out</label>
           			<%= f.text_field :end_date, readonly: true, placeholder: "End Date",
-          				 class: "form-control datepicker" %>
+          				 class: "form-control datepicker", disabled: true %>
         		</div>
+      		</div>
+
+      		<div id="preview" style="display: none" >
+		        <table class="reservation-table">
+		          <tbody>
+		            <tr>
+		              <td>Price</td>
+		              <td class="text-right">$<%= @room.price %></td>
+		            </tr>
+		            <tr>
+		              <td>Night(s)</td>
+		              <td class="text-right">x<span id="reservation_nights"></span></td>
+		            </tr>
+		            <tr>
+		              <td class="total">Total</td>
+		              <td class="text-right">$<span id="reservation_total"></span></td>
+		            </tr>
+		          </tbody>
+		        </table>
       		</div>
       		<br>
 			<%= f.submit "Book Now", class: "btn btn-normal" %>
