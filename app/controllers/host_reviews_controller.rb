@@ -29,7 +29,7 @@ def create
 
 	    end
 	else
-		lash[:alert] = "Not found this reservation"
+		flash[:alert] = "Not found this reservation"
     end
 
 	redirect_back(fallback_location: request.referer)
@@ -40,7 +40,7 @@ def destroy
 	@host_review = Review.find(params[:id])
 	@host_review.destroy 
 
-	redirect_back(fallback_location: request,referer, notice: "Removed")
+	redirect_back(fallback_location: request.referer, notice: "Removed")
 end
 
 
