@@ -12,7 +12,7 @@
         <strong><%= r.host.fullname %></strong>
       </div>
       <div class="col-md-9">
-        <div><%= r.star %></div>
+        <div id="star_<%= r.id %>"></div>
 
         <% if current_user && current_user == r.host %>
             <span class="pull-right">
@@ -25,5 +25,14 @@
         <div><%= r.comment %></div>
       </div>
     </div>
+
+    <script>
+      $('#star_<%= r.id %>').raty({
+        path: '/assets',
+        readOnly: true,
+        score: <%= r.star %>
+      });
+    </script>
   <% end %>
 <% end %>
+
