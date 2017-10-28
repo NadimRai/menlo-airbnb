@@ -15,5 +15,7 @@
 //= require jquery-ui
 //= require bootstrap-sprockets
 //= require toastr
+//= require moment 
+//= require fullcalendar
 
 //= require_tree .
